@@ -1,0 +1,11 @@
+@* "/game" - Main game page *@
+@using TypingSpeed.Models;
+
+<p>@Strings.test1</p>
+
+<form action="/game" method="post">
+  <input id='playerObject' name='playerObject' type='hidden' value='@Model'>
+  <label for="userInput"></label>
+  <input type="text" name="userInput">
+  <button type="submit" name="button">Submit</button>
+</form>
